@@ -10,24 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da adivinhação</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
   <body>
     <main>
-      <div class="scren1 hide">
+      <div class="scren1">
         <h1>Jogo da Adivinhação</h1>
         <p>Adivinhe um número entre 0 e 10.</p>
 
         <form action="">
-          <input type="number" min="0" max="10" />
-          <button>Tentar</button>
+          <input type="number" min="0" max="10" id="inputNumber" />
+          <button onclick="handleClick(event)">Tentar</button>
         </form>
       </div>
 
-      <div class="screen2">
+      <div class="screen2 hide">
         <h2>Acertou em 3 tentativas!</h2>
         <button>Jogar novamente</button>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
